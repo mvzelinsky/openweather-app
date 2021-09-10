@@ -1,9 +1,31 @@
 .weather-container{
+    height: 60vh;
     width: 80%;
-    background-color: burlywood;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(190, 190, 190);
 }
 
-.weather-container i{
-    font-size: 170px;
+.weather-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    font-size: 180px;
+}
+
+.weather-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.degrees{
+    font-size: 68px;
 }
