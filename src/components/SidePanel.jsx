@@ -25,16 +25,6 @@ class SidePanel extends React.Component{
             description: '',
             errror: false
         };
-
-        this.weatherIcon = {
-            Thunderstorm: "wi-thunderstorm",
-            Drizzle: "wi-sleet",
-            Rain: "wi-storm-showers",
-            Snow: "wi-snow",
-            Atmosphere: "wi-fog",
-            Clear: "wi-day-sunny",
-            Clouds: "wi-day-fog"
-        };
     }
 
     getCurrentWeather = async (e) => {
@@ -49,6 +39,7 @@ class SidePanel extends React.Component{
 
         this.setState({
             city: `${response.name}, ${response.sys.country}`,
+            icon: response.weather[0].id,
             main: {
                 feels_like: response.main.feels_like,
                 humidity: response.main.humidity,
@@ -68,6 +59,7 @@ class SidePanel extends React.Component{
             <div className = "side-panel">
                 <Form loadweather = {this.getCurrentWeather}/>
                 <Weather city={this.state.city}
+                         icon = {this.state.icon}
                          temp = {this.state.main.temp}
                          feels_like = {this.state.main.feels_like}
                          description = {this.state.description}

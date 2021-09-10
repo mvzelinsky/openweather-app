@@ -8,7 +8,7 @@ function Weather(props) {
     return(
         <div className = "weather-container">
             <div className="weather-icon">
-                <i className="wi wi-fog"></i>
+                <i className={`wi wi-owm-${props.icon}`}></i>
             </div>
             <div className="weather-info">
                 <div className="city">{props.city}</div>
