@@ -1,10 +1,10 @@
-import SidePanel from './components/SidePanel'
-import './App.css'
+import SidePanel from './components/SidePanel';
+import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <SidePanel/>
+      <SidePanel />
     </div>
   );
 }

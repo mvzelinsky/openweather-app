@@ -1,46 +1,52 @@
-.weather-container{
-    height: 60vh;
-    width: 80%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.weather-container {
+  height: 60vh;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.weather-icon{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 15px;
-    padding-top: 10px;
-    padding-bottom: 50px;
-    font-size: 180px;
+.weather-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+  padding-top: 10px;
+  padding-bottom: 40px;
+  font-size: 180px;
 }
 
-.weather-info{
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    font-size: 24px;
-    padding-bottom: 25px;
-    border-bottom: 1px solid rgb(190, 190, 190);
-    margin-bottom: 25px;
+.weather-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  font-size: 24px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid rgb(190, 190, 190);
+  margin-bottom: 25px;
 }
 
-.degrees{
-    font-size: 68px;
+.degrees {
+  font-size: 68px;
 }
 
-.clouds, .humidity, .pressure, .wind{
-    font-size: 20px;
-    margin-bottom: 20px;
+.clouds,
+.humidity,
+.pressure,
+.wind {
+  font-size: 20px;
+  margin-bottom: 20px;
 }
 
-.clouds i, .humidity i, .pressure i, .wind i{
-    margin-right: 20px;
-    font-size: 30px;
+.clouds i,
+.humidity i,
+.pressure i,
+.wind i {
+  margin-right: 20px;
+  font-size: 30px;
 }
 
-.direction{
-    margin-left: 15px;
+.direction {
+  margin-left: 15px;
 }
