@@ -2,41 +2,41 @@
     padding-top: 40px;
     width: 80%;
     margin: auto;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+}
+
+form{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .search {
+    min-width: 230px;
     display: inline-flex;
     background-color: rgb(240, 240, 240);
     border-radius: 30px;
     padding: 5px;
-  }
-  
-  .search-icon {
-    width: 20px;
-    height: 20px;
-    margin-top: 4px;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-  
-  .search-field {
-    background-color: rgb(240, 240, 240);
-    margin-left: 15px;
-    width: 80%;
-    border: 0; 
-  }
-  
-  .search-field:focus {
-    outline: none;
-  }
+}
 
-  .local-weather-btn{
-    width: 30px;
-    height: 30px;
+.search-field {
+  background-color: rgb(240, 240, 240);
+  margin-left: 15px;
+  width: 80%;
+  border: 0; 
+}
+
+.search-field:focus {
+  outline: none;
+}
+
+.local-weather-btn{
     background-color: rgb(240, 240, 240);
     border: none;
-    border-radius: 40%;
+    border-radius: 30px;
+}
+
+.local-weather-btn:hover{
+  cursor: pointer;
+  background-color: rgb(170, 170, 170);
 }

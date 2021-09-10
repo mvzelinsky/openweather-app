@@ -1,14 +1,16 @@
 import React from 'react';
 import '../styles/Form.css'
 
-function Form() {
+function Form(props) {
     return(
         <div className = "form-container">
-            <div className="search">
-                <input type="text" className="search-field" placeholder="Название города"/>
-                <i className="fas fa-search-location search-icon"></i>
-            </div>
-            <button className="local-weather-btn"><i className="fas fa-home"></i></button>
+            <form onSubmit = {props.loadweather}>
+                <div className="search">
+                    <input type="text" className="search-field" placeholder="Название города"/>
+                    <i className="fas fa-search-location search-icon"></i>
+                </div>
+                    <button className="local-weather-btn">Search</button>
+            </form>
         </div>
     );
 }
