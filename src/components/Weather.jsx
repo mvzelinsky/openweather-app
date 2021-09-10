@@ -1,38 +1,45 @@
 import React from 'react';
 import '../styles/weather.css'
 import 'weather-icons/css/weather-icons.css'
+import 'weather-icons/css/weather-icons-wind.css'
 
-function Weather() {
+
+function Weather(props) {
     return(
         <div className = "weather-container">
             <div className="weather-icon">
                 <i className="wi wi-fog"></i>
             </div>
             <div className="weather-info">
-                <div className="city">Yaroslavl, RU</div>
-                <div className="degrees">15 <i className="wi wi-celsius"></i></div>
-                <div className="feels-like">16.24 <i className="wi wi-celsius"></i></div>
+                <div className="city">{props.city}</div>
+                <div className="degrees">{calcTemp(props.temp)}<i className="wi wi-celsius"></i></div>
+                <div className="feels-like">Feels like: {calcTemp(props.feels_like)}<i className="wi wi-celsius"></i></div>
             </div>
             <div className="description">
                 <div className="clouds">
                     <i className="wi wi-cloud"></i>
-                    <span>scattered clouds</span>
+                    <span>{props.description}</span>
                 </div>
                 <div className="wind">
                     <i className="wi wi-strong-wind"></i>
-                    <span>3</span> m/s (gust <span>5.1</span> m/s)
+                    {props.wind_speed} m/s 
+                    <i className="wi wi-wind wi-from-sw direction"></i>
                 </div>
                 <div className="humidity">
                     <i className="wi wi-humidity"></i>
-                    <span>78%</span>
+                    {props.humidity} %
                 </div>
                 <div className="pressure">
                     <i className="wi wi-barometer"></i>
-                    <span>1005</span>
+                    {props.pressure}
                 </div>
             </div>
         </div>
     );
+}
+
+function calcTemp(temp){
+    return Math.floor(temp - 273.15);
 }
 
 export default Weather;
