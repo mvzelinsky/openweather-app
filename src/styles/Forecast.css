@@ -1,0 +1,21 @@
+.forecast {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.daily {
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px;
+  display: flex;
+  height: 200px;
+  width: 85%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+::-webkit-scrollbar {
+  /* chrome based */
+  width: 0px; /* ширина scrollbar'a */
+  background: transparent; /* опционально */
+}

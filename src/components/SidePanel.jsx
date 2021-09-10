@@ -9,6 +9,10 @@ class SidePanel extends React.Component {
   constructor() {
     super();
     this.state = {
+      coord: {
+        long: null,
+        lat: null,
+      },
       city: null,
       icon: null,
       main: {
