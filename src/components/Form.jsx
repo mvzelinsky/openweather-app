@@ -5,10 +5,10 @@ function Form() {
     return(
         <div className = "form-container">
             <div className="search">
-                <input type="text" class="search-field" placeholder="Название города"/>
-                <i class="fas fa-search-location search-icon"></i>
+                <input type="text" className="search-field" placeholder="Название города"/>
+                <i className="fas fa-search-location search-icon"></i>
             </div>
-            <button class="local-weather-btn"><i class="fas fa-home"></i></button>
+            <button className="local-weather-btn"><i className="fas fa-home"></i></button>
         </div>
     );
 }
