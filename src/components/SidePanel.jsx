@@ -10,17 +10,17 @@ class SidePanel extends React.Component{
     constructor(){
         super();
         this.state = {
-            city: undefined,
-            icon: undefined,
+            city: null,
+            icon: null,
             main: {
-                feels_like: undefined,
-                humidity: undefined,
-                pressure: undefined,
-                temp: undefined
+                feels_like: null,
+                humidity: null,
+                pressure: null,
+                temp: null
             },
             wind: {
-                deg: undefined,
-                speed: undefined
+                deg: null,
+                speed: null
             },
             description: '',
             errror: false
