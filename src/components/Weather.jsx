@@ -9,18 +9,26 @@ function Weather() {
                 <i className="wi wi-fog"></i>
             </div>
             <div className="weather-info">
-                <div className="city">Saint-Petersburg</div>
+                <div className="city">Yaroslavl, RU</div>
                 <div className="degrees">15 <i className="wi wi-celsius"></i></div>
-                <div className="today">Friday, 12:00</div>
+                <div className="feels-like">16.24 <i className="wi wi-celsius"></i></div>
             </div>
-            <div className="weather-description">
+            <div className="description">
                 <div className="clouds">
                     <i className="wi wi-cloud"></i>
-                    <span>Облачно</span>
+                    <span>scattered clouds</span>
                 </div>
-                <div className="rain-probability">
-                    <i className="wi wi-rain"></i>
-                    <span>30%</span>
+                <div className="wind">
+                    <i className="wi wi-strong-wind"></i>
+                    <span>3</span> m/s (gust <span>5.1</span> m/s)
+                </div>
+                <div className="humidity">
+                    <i className="wi wi-humidity"></i>
+                    <span>78%</span>
+                </div>
+                <div className="pressure">
+                    <i className="wi wi-barometer"></i>
+                    <span>1005</span>
                 </div>
             </div>
         </div>

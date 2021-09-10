@@ -11,9 +11,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 35px;
+    margin-top: 15px;
     padding-top: 10px;
-    padding-bottom: 70px;
+    padding-bottom: 50px;
     font-size: 180px;
 }
 
@@ -22,21 +22,21 @@
     flex-direction: column;
     justify-content: end;
     font-size: 24px;
-    padding-bottom: 30px;
+    padding-bottom: 25px;
     border-bottom: 1px solid rgb(190, 190, 190);
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 .degrees{
     font-size: 68px;
 }
 
-.clouds, .rain-probability{
+.clouds, .humidity, .pressure, .wind{
     font-size: 20px;
     margin-bottom: 20px;
 }
 
-.clouds i, .rain-probability i{
+.clouds i, .humidity i, .pressure i, .wind i{
     margin-right: 20px;
     font-size: 30px;
 }
