@@ -32,6 +32,11 @@ form {
   background-color: rgb(240, 240, 240);
 }
 
+.search-field:active {
+  outline: none;
+  background-color: rgb(240, 240, 240);
+}
+
 .local-weather-btn {
   background-color: rgb(240, 240, 240);
   border: none;
