@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import '../styles/Forecast.css';
 
 const DailyForecastCard = (props) => {
-  console.log(props);
   return (
     <div>
       <div className="daily">
@@ -48,8 +47,17 @@ const DailyForecastCard = (props) => {
 
   function getWeekDay(timestamp) {
     let week = ['Sunday', 'Monday', 'Tuesday', 'Wednsday', 'Thursday', 'Friday', 'Saturday'];
+    let days = ['Today', 'Tomorrow'];
     let d = new Date(timestamp * 1000);
-    return week[d.getDay()];
+    let today = new Date();
+
+    if (today.getDate() === d.getDate()) {
+      return days[0];
+    } else if (today.getDate() + 1 === d.getDate()) {
+      return days[1];
+    } else {
+      return week[d.getDay()];
+    }
   }
 };
 

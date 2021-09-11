@@ -3,7 +3,6 @@ import '../styles/Forecast.css';
 import DailyForecastCard from './DailyForecastCard';
 
 function Forecast(props) {
-  console.log(props.forecast);
   return (
     <div className="forecast">
       {props.forecast.map((object) => (

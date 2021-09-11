@@ -26,14 +26,11 @@ class MainPanel extends React.Component {
     const api_call = await fetch(
       `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=minutely,hourly,alerts,current&appid=${API_key}`,
     );
-
     const response = await api_call.json();
-    console.log(response);
 
     this.setState({
       forecast: [...response.daily],
     });
-    console.log(this);
   };
   render() {
     return (
