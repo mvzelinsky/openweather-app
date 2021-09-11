@@ -10,7 +10,7 @@ class SidePanel extends React.Component {
     super();
     this.state = {
       coord: {
-        long: null,
+        lon: null,
         lat: null,
       },
       city: null,
@@ -44,6 +44,10 @@ class SidePanel extends React.Component {
 
     this.setState({
       city: `${response.name}, ${response.sys.country}`,
+      coord: {
+        lon: response.coord.lon,
+        lat: response.coord.lat,
+      },
       icon: response.weather[0].id,
       main: {
         feels_like: response.main.feels_like,
@@ -57,6 +61,8 @@ class SidePanel extends React.Component {
         speed: response.wind.speed,
       },
     });
+
+    this.props.loadCoords(this.state.coord);
   };
 
   render() {
