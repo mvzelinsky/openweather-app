@@ -15,7 +15,6 @@ class App extends React.Component {
   }
 
   getCoords = (coord) => {
-    console.log(coord);
     this.setState({
       coord: {
         lon: coord.lon,
@@ -28,7 +27,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <SidePanel loadCoords={this.getCoords} />
-        <MainPanel />
+        <MainPanel coord={this.state.coord} />
       </div>
     );
   }
