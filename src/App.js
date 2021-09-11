@@ -27,7 +27,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <SidePanel loadCoords={this.getCoords} />
-        <MainPanel coord={this.state.coord} />
+        <MainPanel {...this.state} />
       </div>
     );
   }
