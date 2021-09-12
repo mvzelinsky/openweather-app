@@ -6,7 +6,7 @@ function Form(props) {
     <div className="form-container">
       <form onSubmit={props.loadweather}>
         <div className="search">
-          <input type="text" className="search-field" name="city" placeholder="Название города" />
+          <input type="text" className="search-field" name="city" placeholder="City..." />
           <i className="fas fa-search-location search-icon"></i>
         </div>
         <button className="local-weather-btn">Search</button>

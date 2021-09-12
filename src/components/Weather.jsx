@@ -24,8 +24,7 @@ function Weather(props) {
       <div>
         <div className="wind">
           <i className="wi wi-strong-wind"></i>
-          {props.wind_speed} m/s
-          <i className="wi wi-wind wi-from-s direction"></i>
+          {props.wind_speed} m/s, S<i className="wi wi-wind wi-from-s direction"></i>
         </div>
         <div className="humidity">
           <i className="wi wi-humidity"></i>
