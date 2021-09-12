@@ -7,20 +7,47 @@
   justify-content: space-between;
 }
 
+.city {
+  /* background-color: beige; */
+  font-size: 36px;
+  letter-spacing: 2px;
+  text-align: center;
+  margin: 25px auto 10px auto;
+}
+
+.temp-icon {
+  /* background-color: bisque; */
+  display: flex;
+  justify-content: center;
+}
+
+.degrees {
+  display: flex;
+  align-items: center;
+}
+
 .weather-icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 25px;
-  padding-top: 10px;
-  padding-bottom: 40px;
-  font-size: 180px;
+  font-size: 110px;
+  margin: 25px;
+}
+
+.description,
+.feels-like {
+  text-align: center;
+  font-size: 28px;
+  letter-spacing: 0.7px;
+}
+
+.feels-like {
+  color: rgb(155, 155, 155);
 }
 
 .weather-info {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
   font-size: 24px;
   padding-bottom: 25px;
   border-bottom: 1px solid rgb(190, 190, 190);
@@ -40,11 +67,13 @@
 
 .humidity i,
 .pressure i,
-.wind i {
+.wind > i {
   margin-right: 20px;
   font-size: 30px;
 }
 
 .direction {
+  display: inline-block;
   margin-left: 10px;
+  font-size: 30px;
 }

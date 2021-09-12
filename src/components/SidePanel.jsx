@@ -75,6 +75,7 @@ class SidePanel extends React.Component {
           feels_like={this.state.main.feels_like}
           description={this.state.description}
           wind_speed={this.state.wind.speed}
+          wind_deg={this.state.wind.deg}
           humidity={this.state.main.humidity}
           pressure={this.state.main.pressure}
         />
